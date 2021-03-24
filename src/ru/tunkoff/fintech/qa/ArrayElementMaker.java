@@ -1,6 +1,6 @@
 package ru.tunkoff.fintech.qa;
 
 @FunctionalInterface
-public interface ArrayElementMaker {
-    int process(int index, int modifier);
+public interface ArrayElementMaker<T> {
+    T process(T index, T modifier);
 }

@@ -73,7 +73,7 @@ public class Main {
         scanner.close();
     }
 
-    public static int[] getArray(final int size, final int modifier, final ArrayElementMaker maker) {
+    public static int[] getArray(final int size, final int modifier, final ArrayElementMaker<Integer> maker) {
         int[] array = new int[size];
         for (int i = 0; i < size; i++) {
             array[i] = maker.process(i, modifier);
